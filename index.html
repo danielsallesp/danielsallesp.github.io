@@ -1,138 +1,146 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daniel Salles - Engenharia</title>
-<style>
-  /* Reset simples */
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  
-  body {
-    font-family: "Courier New", Courier, monospace;
-    background-color: #0d1117;
-    color: #e6edf3;
-    line-height: 1.6;
-    display: flex;
-    min-height: 100vh;
-  }
-
-  /* Menu lateral */
-  nav {
-    width: 220px;
-    background-color: #161b22;
-    padding: 20px;
-    flex-shrink: 0;
-  }
-  nav h2 {
-    font-size: 18px;
-    margin-bottom: 20px;
-    color: #58a6ff;
-  }
-  nav a {
-    display: block;
-    color: #e6edf3;
-    text-decoration: none;
-    margin-bottom: 10px;
-  }
-  nav a:hover {
-    color: #58a6ff;
-  }
-
-  /* Conteúdo principal */
-  main {
-    flex: 1;
-    padding: 40px;
-  }
-  main h1 {
-    font-size: 28px;
-    margin-bottom: 15px;
-    color: #58a6ff;
-  }
-  main p {
-    margin-bottom: 20px;
-  }
-  footer {
-    margin-top: 40px;
-    font-size: 14px;
-    opacity: 0.7;
-  }
-
-  /* Links de destaque */
-  .link-button {
-    display: inline-block;
-    padding: 6px 12px;
-    margin: 4px 0;
-    border: 1px solid #58a6ff;
-    color: #58a6ff;
-    text-decoration: none;
-    font-size: 14px;
-  }
-  .link-button:hover {
-    background-color: #58a6ff;
-    color: #0d1117;
-  }
-
-  /* Responsividade simples */
-  @media (max-width: 768px) {
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Salles - Engenharia Elétrica e Automação</title>
+  <style>
     body {
-      flex-direction: column;
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
     }
     nav {
-      width: 100%;
-      display: flex;
-      overflow-x: auto;
+      background-color: #444;
+      overflow: hidden;
     }
     nav a {
-      margin-right: 15px;
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
     }
-    main {
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    section {
       padding: 20px;
+      margin: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-  }
-</style>
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+    .cotacoes {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+    .cotacao {
+      background-color: #e2e2e2;
+      padding: 10px;
+      border-radius: 8px;
+      width: 30%;
+      text-align: center;
+    }
+    .cotacao h3 {
+      margin: 0;
+    }
+    .cotacao p {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
 
-<!-- Menu lateral -->
+<header>
+  <h1>Daniel Salles - Engenharia Elétrica e Automação</h1>
+</header>
+
 <nav>
-  <h2>Menu</h2>
   <a href="#sobre">Sobre</a>
   <a href="#projetos">Projetos</a>
   <a href="#contato">Contato</a>
-  <a href="#links">Links</a>
+  <a href="#cotacoes">Cotações</a>
 </nav>
 
-<!-- Conteúdo principal -->
-<main>
-  <h1>Bem-vindo ao site de Daniel Salles ⚙️</h1>
-  <p>Engenharia Elétrica | Automação | Projetos & Ideias</p>
+<section id="sobre">
+  <h2>Sobre Mim</h2>
+  <p>Sou estudante de Engenharia Elétrica na UNIFEI, apaixonado por automação e sistemas elétricos. Busco sempre aplicar meus conhecimentos em projetos inovadores e sustentáveis.</p>
+</section>
 
-  <section id="sobre">
-    <h2>Sobre</h2>
-    <p>Sou estudante de Engenharia Elétrica na UNIFEI, apaixonado por automação, sistemas elétricos e eficiência em projetos.</p>
-  </section>
+<section id="projetos">
+  <h2>Projetos Recentes</h2>
+  <ul>
+    <li><strong>Automação Residencial:</strong> Sistema inteligente de controle de iluminação e temperatura via aplicativo móvel.</li>
+    <li><strong>Monitoramento Solar:</strong> Plataforma para acompanhamento em tempo real da geração de energia solar fotovoltaica.</li>
+    <li><strong>Robô Seguidor de Linha:</strong> Protótipo de robô autônomo para competições de robótica.</li>
+  </ul>
+</section>
 
-  <section id="projetos">
-    <h2>Projetos</h2>
-    <p>Aqui você encontra alguns dos meus projetos pessoais e acadêmicos.</p>
-    <a class="link-button" href="#">Projeto 1</a>
-    <a class="link-button" href="#">Projeto 2</a>
-  </section>
+<section id="contato">
+  <h2>Contato</h2>
+  <p>Email: <a href="mailto:danielsallesp@example.com">danielsallesp@example.com</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/danielsallesp" target="_blank">linkedin.com/in/danielsallesp</a></p>
+</section>
 
-  <section id="contato">
-    <h2>Contato</h2>
-    <p>Email: <a href="mailto:danielsalles@example.com">danielsalles@example.com</a></p>
-  </section>
+<section id="cotacoes">
+  <h2>Cotações em Tempo Real</h2>
+  <div class="cotacoes">
+    <div class="cotacao" id="cotacao-dolar">
+      <h3>Dólar (USD)</h3>
+      <p id="valor-dolar">Carregando...</p>
+    </div>
+    <div class="cotacao" id="cotacao-euro">
+      <h3>Euro (EUR)</h3>
+      <p id="valor-euro">Carregando...</p>
+    </div>
+  </div>
+</section>
 
-  <section id="links">
-    <h2>Links Úteis</h2>
-    <a class="link-button" href="https://github.com/danielsallesp" target="_blank">GitHub</a>
-    <a class="link-button" href="https://www.linkedin.com/in/danielsalles/" target="_blank">LinkedIn</a>
-  </section>
+<footer>
+  <p>&copy; 2025 Daniel Salles. Todos os direitos reservados.</p>
+</footer>
 
-  <footer>© 2025 Daniel Salles</footer>
-</main>
+<script>
+  async function obterCotacoes() {
+    try {
+      const resposta = await fetch('https://economia.awesomeapi.com.br/json/last/USD-BRL,EUR-BRL');
+      const dados = await resposta.json();
+
+      const cotacaoDolar = dados.USDBRL;
+      const cotacaoEuro = dados.EURBRL;
+
+      document.getElementById('valor-dolar').textContent = `R$ ${cotacaoDolar.bid}`;
+      document.getElementById('valor-euro').textContent = `R$ ${cotacaoEuro.bid}`;
+    } catch (erro) {
+      console.error('Erro ao obter cotações:', erro);
+    }
+  }
+
+  obterCotacoes();
+  setInterval(obterCotacoes, 60000); // Atualiza a cada 60 segundos
+</script>
 
 </body>
 </html>
